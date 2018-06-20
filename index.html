@@ -1,0 +1,548 @@
+<html>
+<head> 
+
+	
+
+<link rel="stylesheet prefetch" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+
+<style> 
+@keyframes filler {
+  from {
+    right: 100%;
+  }
+}
+a {
+  color: #0190b8;
+}
+
+.mg-bt-20 {
+  margin-bottom: 20px;
+}
+
+.row {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.name-intro {
+  margin-top: 20px;
+}
+.name-intro .control-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+.name-intro .control-img img {
+  width: 200px;
+  top: -70px;
+  position: absolute;
+  left: -30px;
+}
+.name-intro .name-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name-intro .name {
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+.name-intro .desc {
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: none;
+  margin: 0 auto;
+  text-align: center;
+}
+.name-intro .contact {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  min-height: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.name-intro .contact .info-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.name-intro .contact .info-group .info-icon {
+  width: 24px;
+  height: 24px;
+}
+.name-intro .contact .info-group p,
+.name-intro .contact .info-group a {
+  margin: 0;
+  margin-left: 5px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.heading {
+  display: block;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.heading span {
+  display: inline-block;
+  position: relative;
+  letter-spacing: 3px;
+}
+.heading span:before, .heading span:after {
+  content: "";
+  border-bottom: 2px solid #0190b8;
+  width: 3em;
+  margin: 0 1.5em;
+  position: absolute;
+  bottom: .5em;
+}
+.heading span:before {
+  right: 100%;
+}
+.heading span:after {
+  left: 100%;
+}
+
+.skills {
+  font-size: 20px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills .skill {
+  display: block;
+  position: relative;
+  height: 50px;
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .skills .skill {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+  }
+}
+.skills .skill:before, .skills .skill:after {
+  content: " ";
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.skills .skill:before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  background: #eeeeee;
+}
+.skills .skill:after {
+  background-color: #0190b8;
+  height: 16px;
+  top: 2px;
+  right: 95%;
+  bottom: 2px;
+  left: 2px;
+  animation: filler 2s both;
+}
+.skills .skill:nth-child(1):after {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.skills .skill:nth-child(2):after {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.skills .skill:nth-child(3):after {
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+.skills .skill:nth-child(4):after {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.skills .skill:nth-child(5):after {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+.skills .skill:nth-child(6):after {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+.skills .skill:nth-child(7):after {
+  -webkit-animation-delay: 2.1s;
+  -moz-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+.skills .skill:nth-child(8):after {
+  -webkit-animation-delay: 2.4s;
+  -moz-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+.skills .skill:nth-child(9):after {
+  -webkit-animation-delay: 2.7s;
+  -moz-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+}
+.skills .skill:nth-child(10):after {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.skills .skill:nth-child(11):after {
+  -webkit-animation-delay: 3.3s;
+  -moz-animation-delay: 3.3s;
+  animation-delay: 3.3s;
+}
+.skills .skill:nth-child(12):after {
+  -webkit-animation-delay: 3.6s;
+  -moz-animation-delay: 3.6s;
+  animation-delay: 3.6s;
+}
+.skills .skill[aria-label="novice"]:after {
+  right: 75%;
+}
+.skills .skill[aria-label="average"]:after {
+  right: 50%;
+}
+.skills .skill[aria-label="adept"]:after {
+  right: 35%;
+}
+.skills .skill[aria-label="advanced"]:after {
+  right: 20%;
+}
+.skills .skill[aria-label="elite"]:after {
+  right: 10%;
+}
+.skills .skill[aria-label="pro"]:after {
+  right: 2px;
+}
+
+.certs {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+@media (max-width: 1240px) {
+  .certs {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.certs .cert-data {
+  width: 390px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+}
+.certs .cert-data .left-side {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.certs .cert-data .left-side img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+}
+.certs .cert-data .right-side {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  width: calc(100% - 100px);
+}
+.certs .cert-data .right-side h6, .certs .cert-data .right-side a, .certs .cert-data .right-side p {
+  margin: 0 0 10px;
+}
+.certs .cert-data .right-side p span {
+  background-color: #018fb8;
+  line-height: 1em;
+  padding: 2px 10px;
+  border-radius: 13px;
+  color: white;
+  margin-right: 5px;
+}
+
+.work-experience {
+  padding-left: 40px;
+  position: relative;
+  max-width: 1000px;
+  margin: 20px auto 0;
+}
+.work-experience:before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background: #aab4c3;
+  left: 6px;
+  top: 4px;
+  position: absolute;
+}
+@media (max-width: 767px) {
+  .work-experience {
+    padding-left: 20px;
+  }
+  .work-experience:before {
+    display: none;
+  }
+}
+.work-experience .work-expo {
+  position: relative;
+  margin-bottom: 30px;
+}
+.work-experience .work-expo:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -40px;
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  border: 4px solid #58677c;
+  background: white;
+  border-radius: 50%;
+}
+.work-experience .work-expo .time-pos {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.work-experience .work-expo .time-pos .pos {
+  font-size: 1.2em;
+}
+.work-experience .work-expo .time-pos .timeline {
+  color: #0190b8;
+}
+.work-experience .work-expo h8 {
+  font-size: 1em;
+  color: #0190b8;
+}
+.work-experience .work-expo p {
+  padding: 0;
+  width: 95%;
+}
+
+.edu-info {
+  width: 380px;
+  margin: 0 auto;
+  text-align: center;
+}
+.edu-info .timeline {
+  color: #0190b8;
+}
+
+.online-foo {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.online-foo a {
+  margin: 0 10px 10px;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  color: #0190b8;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #0190b8;
+  padding: 4px 8px;
+  border-radius: 16px;
+}
+.online-foo a:hover {
+  background: #0190b8;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .col-xs-12 {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .control-img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .control-img img {
+    left: -52px !important;
+    top: -87px !important;
+  }
+}
+
+
+</style>
+
+
+</head>
+<body> 
+<div class="container-fluid">
+	<div class="row name-intro">
+		<div class="col-xs-12 col-md-9">
+	      	<div class="row">
+				<div class="col-md-3 col-xs-12">
+			        <div class="control-img">
+					  	<img src="https://res.cloudinary.com/dj2zgrbgb/image/upload/v1529246002/me/me.jpg" />
+			        </div>
+		  		</div>
+		  		<div class="col-md-9 col-xs-12 name-card">
+		  			<h6 class="name">SHRIHARI BALASUBRAMANI</h6>
+		  			<h8 class="desc">Full Stack Developer</h8>
+		  		</div>
+	        </div>
+		</div>
+		<div class="contact col-xs-12 col-md-3">
+			<div  class="info-group"><img class="info-icon" src="https://res.cloudinary.com/dj2zgrbgb/image/upload/v1529256337/phone.png"/> <p>+91-9591465023</p> </div>
+			<div  class="info-group"><img class="info-icon" src="https://res.cloudinary.com/dj2zgrbgb/image/upload/v1529256339/email1.png"/> <p>shri.hari7@gmail.com</p> </div>
+			<div  class="info-group"><img class="info-icon" src="https://res.cloudinary.com/dj2zgrbgb/image/upload/v1529256338/linkedin1.png"/> <a target="_blank" href="https://linkedin.com/in/shriharibalasubramani">/in/shriharibalasubramani</a> </div>
+			<div  class="info-group" ><img class="info-icon" src="https://res.cloudinary.com/dj2zgrbgb/image/upload/v1529256338/geo.png"/> <p>Bangalore,India</p> </div>
+		</div>
+	</div>
+	<div class="row">
+  		<div class="heading" ><span>Skills</span></div>
+		<div class="skills">
+			<p class="skill" aria-label="pro">HTML, CSS</p>
+			<p class="skill" aria-label="elite">Bootstrap</p>
+			<p class="skill" aria-label="adept">React</p>
+			<p class="skill" aria-label="adept">Redux</p>
+			<p class="skill" aria-label="pro">Meteor</p>
+			<p class="skill" aria-label="pro">Node – Express</p>      
+			<p class="skill" aria-label="adept">Mongo</p>
+			<p class="skill" aria-label="average">Docker</p>
+			<p class="skill" aria-label="average">D3</p>
+			<p class="skill" aria-label="elite">Redis</p> 		           
+			<p class="skill" aria-label="average">Grunt, Webpack</p> 
+			<p class="skill" aria-label="average">Mocha</p> 
+		</div>
+	</div>
+	<div class="row">
+	  	<div class="col-xs-12 col-md-6">
+	  		<div class="heading mg-bt-20" ><span>Education</span></div>  		
+	  		<div class="edu-info"> 
+		 			<h6 class="pos">PESIT, Bangalore south campus</h6>
+		 			<h6 class="timeline">Aug 2011 - Jun 2015</h6>
+		 			<h6 >Bachelors of Engineering - Computer science </h6>
+	  		</div>
+		</div>
+	  	<div class="col-xs-12 col-md-6">
+	  		<div class="heading mg-bt-20" ><span>Online Footprint</span></div>  		
+	  		<div class="online-foo">
+        		<a href="https://codepen.io/demonarch" target="_blank" >codepen</a>
+				<a href="https://www.freecodecamp.org/shrihari-balasubramani" target="_blank" >freecodecamp</a>
+				<a href="https://stackoverflow.com/users/2144549/shrihari-balasubramani" target="_blank" >stackoverflow</a>
+				<a href="https://github.com/shrihari-balasubramani" target="_blank" >github</a>
+        	</div>  
+		</div>
+	</div>	
+	<div class="row">
+  		<div class="heading" ><span>Certifications</span></div>
+  			<div class="certs">
+		  		<div class="cert-data">
+		  			<div class="left-side">
+		  				<img src="https://res.cloudinary.com/dj2zgrbgb/image/upload/v1529318028/fcc.png"/>
+		  			</div>
+		  			<div class="right-side">
+		  				<h6 >Front end developer certification</h6>
+			  			<a href="https://tinyurl.com/certfront" target="_blank" >https://tinyurl.com/certfront </a>
+			  			<p><span>html</span> <span>css</span> <span>js</span></p>
+		  			</div>		  			
+		  		</div>	
+		  		<div class="cert-data">
+		  			<div class="left-side">
+		  				<img src="https://res.cloudinary.com/dj2zgrbgb/image/upload/v1529318028/fcc.png"/>
+		  			</div>
+		  			<div class="right-side">
+			  			<h6>Data visualtization certification</h6>
+			  			<a href="https://tinyurl.com/yd6b7aoc" target="_blank" >https://tinyurl.com/yd6b7aoc</a>
+			  			<p><span>react</span> <span>redux</span> <span>d3</span></p>
+		  			</div>		  			
+		  		</div>	
+		  		<div class="cert-data">
+		  			<div class="left-side">
+		  				<img src="https://res.cloudinary.com/dj2zgrbgb/image/upload/v1529318028/fcc.png"/>
+		  			</div>
+		  			<div class="right-side">
+			  			<h6>Microservice / api certification</h6>
+			  			<a href="https://tinyurl.com/apimicroservices" target="_blank" >https://tinyurl.com/apimicroservices</a>
+			  			<p><span>node</span> <span>mongo</span> <span>express</span></p>
+		  			</div>		 
+		  		</div>			
+	  		</div>	  		
+  	</div>
+	<div class="row">
+  		<div class="heading" ><span>Work Experience</span></div>
+  		<div class="work-experience">
+  			 <article class="work-expo"> 
+  			 		<div class="time-pos"> 
+  			 			<h6 class="pos">Full stack developer</h6>
+  			 			<h6 class="timeline">Jun 2016 - Present</h6>
+  			 		</div>
+  			 		<h8>Glider.ai</h8>
+  			 		<p>
+  			 			1. Closely worked with the rockstar co-founders while developing:<br/>
+					     + Live interview component with video chat.<br/>
+					     + Web-IDE supporting multiple technologies.<br/>
+					     + Payment gateway with stripe.<br/>
+					     + Chrome-extension to ease users to import data from other sites. <br/>
+						2. Won 'employee-appreciation' award for the Chrome-extension use case.<br/>  
+					</p>
+  			 </article>
+  			 <article class="work-expo"> 
+  			 		<div class="time-pos"> 
+  			 			<h6 class="pos">Full stack developer</h6>
+  			 			<h6 class="timeline">July 2015 - July 2016</h6>
+  			 		</div>
+  			 		<h8>SapientNitro</h8>
+  			 		<p>
+  			 			1. Involved with the team that redesigned and developed accessibility of a US based client website.<br /> +Integrated header and search functionality.<br />
+   						2. Won 'creative core value' award during the tenure. 
+
+					</p>
+  			 </article>  			 
+  			 <article class="work-expo"> 
+  			 		<div class="time-pos"> 
+  			 			<h6 class="pos">Intern</h6>
+  			 			<h6 class="timeline">Jan 2015 - Mar 2016</h6>
+  			 		</div>
+  			 		<h8>Cognizant</h8>
+  			 		<p>
+  			 			Was trained and involved in creation of a c# based full-stack website. 
+					</p>
+  			 </article>    			 
+  		</div>
+  	</div>  
+</div>		
+</body>
+</html>
+	
